@@ -6,7 +6,10 @@ const imageUrl = await getImageUrl("data/receipts/de-werf.jpg");
 const completion = await openai.beta.chat.completions.parse({
   model: "gpt-4o-mini-2024-07-18",
   messages: [
-    { role: "system", content: "Extract the receipt information." },
+    {
+      role: "system",
+      content: `Extract the receipt information. Return a json that states: {"companyName": string[]}`,
+    },
     {
       role: "user",
       content: [

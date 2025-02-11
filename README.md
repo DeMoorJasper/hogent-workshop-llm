@@ -1,5 +1,23 @@
 # Hogent LLM Content extraction workshop
 
+## Running the code
+
+Setup an `.env` file with an openai api key
+
+Run examples:
+
+```shell
+node examples/function-calling.mjs
+```
+
+```shell
+node examples/prompt-engineering.mjs
+```
+
+```shell
+node examples/structured-output.mjs
+```
+
 ## The Receipts
 
 The current examples in function calling / prompt engineering and structured output are all using the receipts folder.
