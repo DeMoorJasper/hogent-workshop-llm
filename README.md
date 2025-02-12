@@ -24,6 +24,11 @@ The current examples in function calling / prompt engineering and structured out
 
 The goal here is to extract the receipt lines, company information and total amounts.
 
+- Line information: description, product code, units, price
+- Total
+- Tax
+- Company information: name, address (street, streetnumber, postalcode)
+
 ### Invoices
 
 Similar to receipts, you should extract parties with their information, invoice number, lines, totals.

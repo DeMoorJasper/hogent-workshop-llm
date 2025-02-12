@@ -8,11 +8,16 @@ const completion = await openai.beta.chat.completions.parse({
   messages: [
     {
       role: "system",
-      content: `Extract the receipt information. Return a json that states: {"companyName": string[]}`,
+      content:
+        "You are a helpful assistant, provide the answer to the user question",
     },
     {
       role: "user",
       content: [
+        {
+          type: "text",
+          text: 'Extract the receipt information. Return a json that states: {"companyName": string[]}',
+        },
         {
           type: "image_url",
           image_url: { url: imageUrl },
